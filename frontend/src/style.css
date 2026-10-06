@@ -169,3 +169,30 @@ th { color: var(--kp-muted); font-weight: 700; font-size: 0.75rem; }
 .stat { font-size: 1.5rem; font-weight: 800; }
 
 .tree ul { list-style: none; padding-left: 1.2rem; margin: 0.25rem 0; }
+
+.kp-qty-input {
+  width: 5rem; padding: 0.2rem 0.35rem;
+  border: 2px solid var(--kp-steel); border-radius: 2px;
+  background: #fffdf8; color: var(--kp-ink); font-size: 0.85rem;
+}
+.kp-qty-input:disabled { opacity: 0.55; cursor: not-allowed; }
+.kp-btn-sm { padding: 0.25rem 0.6rem; font-size: 0.75rem; }
+.kp-btn-ghost { background: var(--kp-steel); color: #f5ebe0; }
+.kp-error { color: var(--kp-bad); font-weight: 700; font-size: 0.82rem; margin: 0.5rem 0 0; }
+.kp-modal-mask {
+  position: fixed; inset: 0; background: rgba(10, 8, 6, 0.55);
+  display: flex; align-items: center; justify-content: center; z-index: 50;
+}
+.kp-modal {
+  background: var(--kp-board); border: 3px solid var(--kp-wood); border-radius: 6px;
+  padding: 1rem 1.2rem; min-width: 320px; color: var(--kp-ink);
+  box-shadow: 4px 4px 0 #1a1e22;
+}
+.kp-modal h3 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+.kp-modal .kp-qty-input { width: 100%; box-sizing: border-box; }
+.kp-modal-actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.8rem; }
+.kp-void {
+  background: none; border: 1px solid currentColor; color: inherit;
+  border-radius: 2px; padding: 0 0.35rem; margin-left: 0.4rem;
+  font-size: 0.68rem; cursor: pointer;
+}
